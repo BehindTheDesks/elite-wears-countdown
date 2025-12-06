@@ -8,11 +8,31 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Elite Countdown",
+  title: "Elite Wears",
   description: "Something extraordinary is coming. Count down with us.",
 
   icons: {
     icon: "/logo.png",
+  },
+  openGraph: {
+    title: "Elite Wears",
+    description: "Something extraordinary is coming. Count down with us.",
+    siteName: "Elite Wears",
+    images: [
+      {
+        url: "/logo.png",
+        width: 800,
+        height: 600,
+        alt: "Elite Wears Logo",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Elite Wears",
+    description: "Something extraordinary is coming. Count down with us.",
+    images: ["/logo.png"],
   },
 }
 
