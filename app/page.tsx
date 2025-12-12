@@ -23,7 +23,7 @@ export default function CountdownPage() {
     setMounted(true)
 
     const calculateTime = () => {
-      const targetDate = new Date("2025-12-10T23:59:59").getTime()
+      const targetDate = new Date("2025-12-13T12:00:00").getTime()
       const now = new Date().getTime()
       const difference = targetDate - now
 
